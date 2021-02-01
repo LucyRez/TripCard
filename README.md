@@ -1,4 +1,4 @@
-# Trip Card
+## Trip Card
 Trip card is a carousel like app made as a hometask on iOS development course at HSE.
 
 #### Preview
