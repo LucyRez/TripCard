@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DB026CD425BF606200000116 /* TripCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB026CD325BF606200000116 /* TripCollectionViewCell.swift */; };
 		DB026CD825BF650600000116 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB026CD725BF650600000116 /* Trip.swift */; };
+		DB98BA6B25D9B34900457239 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB98BA6A25D9B34900457239 /* Stickers.xcassets */; };
+		DB98BA6F25D9B34900457239 /* TestStickerpack.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DB98BA6825D9B34400457239 /* TestStickerpack.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DBAD36D725BDE54A00F38185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAD36D625BDE54A00F38185 /* AppDelegate.swift */; };
 		DBAD36D925BDE54A00F38185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAD36D825BDE54A00F38185 /* SceneDelegate.swift */; };
 		DBAD36DB25BDE54A00F38185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAD36DA25BDE54A00F38185 /* ViewController.swift */; };
@@ -17,9 +19,36 @@
 		DBAD36E325BDE55300F38185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAD36E125BDE55300F38185 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DB98BA6D25D9B34900457239 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBAD36CB25BDE54A00F38185 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB98BA6725D9B34400457239;
+			remoteInfo = TestStickerpack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB98BA7025D9B34900457239 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DB98BA6F25D9B34900457239 /* TestStickerpack.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DB026CD325BF606200000116 /* TripCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCollectionViewCell.swift; sourceTree = "<group>"; };
 		DB026CD725BF650600000116 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		DB98BA6825D9B34400457239 /* TestStickerpack.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TestStickerpack.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB98BA6A25D9B34900457239 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		DB98BA6C25D9B34900457239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBAD36D325BDE54A00F38185 /* TripCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAD36D625BDE54A00F38185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBAD36D825BDE54A00F38185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,10 +70,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB98BA6925D9B34400457239 /* TestStickerpack */ = {
+			isa = PBXGroup;
+			children = (
+				DB98BA6A25D9B34900457239 /* Stickers.xcassets */,
+				DB98BA6C25D9B34900457239 /* Info.plist */,
+			);
+			path = TestStickerpack;
+			sourceTree = "<group>";
+		};
 		DBAD36CA25BDE54A00F38185 = {
 			isa = PBXGroup;
 			children = (
 				DBAD36D525BDE54A00F38185 /* TripCard */,
+				DB98BA6925D9B34400457239 /* TestStickerpack */,
 				DBAD36D425BDE54A00F38185 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				DBAD36D325BDE54A00F38185 /* TripCard.app */,
+				DB98BA6825D9B34400457239 /* TestStickerpack.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +116,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DB98BA6725D9B34400457239 /* TestStickerpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB98BA7325D9B34900457239 /* Build configuration list for PBXNativeTarget "TestStickerpack" */;
+			buildPhases = (
+				DB98BA6625D9B34400457239 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestStickerpack;
+			productName = TestStickerpack;
+			productReference = DB98BA6825D9B34400457239 /* TestStickerpack.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		DBAD36D225BDE54A00F38185 /* TripCard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBAD36E725BDE55300F38185 /* Build configuration list for PBXNativeTarget "TripCard" */;
@@ -83,10 +138,12 @@
 				DBAD36CF25BDE54A00F38185 /* Sources */,
 				DBAD36D025BDE54A00F38185 /* Frameworks */,
 				DBAD36D125BDE54A00F38185 /* Resources */,
+				DB98BA7025D9B34900457239 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DB98BA6E25D9B34900457239 /* PBXTargetDependency */,
 			);
 			name = TripCard;
 			productName = TripCard;
@@ -102,6 +159,9 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					DB98BA6725D9B34400457239 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					DBAD36D225BDE54A00F38185 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -121,11 +181,20 @@
 			projectRoot = "";
 			targets = (
 				DBAD36D225BDE54A00F38185 /* TripCard */,
+				DB98BA6725D9B34400457239 /* TestStickerpack */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DB98BA6625D9B34400457239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB98BA6B25D9B34900457239 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBAD36D125BDE54A00F38185 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +222,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DB98BA6E25D9B34900457239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB98BA6725D9B34400457239 /* TestStickerpack */;
+			targetProxy = DB98BA6D25D9B34900457239 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		DBAD36DC25BDE54A00F38185 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -173,6 +250,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DB98BA7125D9B34900457239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57N35P6574;
+				INFOPLIST_FILE = TestStickerpack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.hse.cs.se.TripCard.TestStickerpack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB98BA7225D9B34900457239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57N35P6574;
+				INFOPLIST_FILE = TestStickerpack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.hse.cs.se.TripCard.TestStickerpack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DBAD36E525BDE55300F38185 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -330,6 +437,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB98BA7325D9B34900457239 /* Build configuration list for PBXNativeTarget "TestStickerpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB98BA7125D9B34900457239 /* Debug */,
+				DB98BA7225D9B34900457239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DBAD36CE25BDE54A00F38185 /* Build configuration list for PBXProject "TripCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
